@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norwegian Secrets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: none;
+        }
+
+        main > * {
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+       
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .knappContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .knappContainer button {
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .knappContainer button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="knappContainer">
+        <button onclick="visSecret()">Trykk for å se Ernas SECRETS</button>
+    </div>
+
+    <main class="container">
+        <h1>"Topp Hemmelighet Avslørt: Norges Statsminister Erna Solberg Er En Hemmelig Agent!"</h1>
+        <p>Som barn vokste Erna opp i en skjult del av det norske fjellandskapet, der hennes foreldre var dyktige agenter som trente henne i kunsten å være usynlig og smidig.
+            Fra en tidlig alder ble Erna introdusert for hemmelige koder og spionteknikker, og hun lærte å navigere gjennom farlige situasjoner med ro og finesse.
+            Hennes barndom var fylt med hemmelige oppdrag og simulerte scenarier, der hun utviklet sine ferdigheter i observasjon, forfølgelse og forhandling.
+            Selv blant jevnaldrende holdt Erna sin sanne identitet skjult, og hennes ensomme oppvekst formet henne til å bli en uavhengig og fokusert agent.
+            Hennes tidlige år var preget av en streng disiplin og dedikasjon til sitt kall, og det var disse grunnleggende erfaringene som dannet grunnlaget for hennes senere suksesser som både hemmelig agent og politisk leder.</p>
+        <img src=".//bilder/image (1).png" alt="">
+        <p>En eksplosiv avsløring har rystet det politiske landskapet i Norge. Etter måneder med intens etterforskning og undercover-operasjoner, har det kommet for en dag at Norges statsminister, Erna Solberg, ikke bare har ledet landet, men også operert som en hemmelig agent for en internasjonal spionorganisasjon.
+            Ifølge pålitelige kilder har Erna Solberg, under dekke av sitt embete som statsminister, utført hemmelige oppdrag rundt om i verden. Disse oppdragene inkluderer alt fra sabotasje av fiendtlige operasjoner til avverging av internasjonale kriser.
+            Det hevdes at Erna Solberg har blitt trent siden ung alder av en mystisk organisasjon som opererer utenfor lovens grenser. Hennes politiske karriere har vært bare et skalkeskjul for hennes virkelige oppdrag som en elite-agent, og hennes politiske suksesser har vært resultatet av hennes skarpe intellekt og dyktighet i manipulering.
+            Men denne sjokkerende avsløringen kaster nå tvil over hele hennes politiske arv. Har hennes beslutninger som statsminister vært til fordel for Norge, eller har de vært en del av et større, globalt spill?
+            Erna Solbergs kontor har nektet å kommentere påstandene og avfeier dem som ren desinformasjon. Men med stadig økende spekulasjoner og krav om en fullstendig granskning, står Norges politiske fremtid på spill som aldri før.
+        </p>
+        <img src=".//bilder/bilde 1_12-38-05.png" alt="">
+        <p>Video fra et topp hemmelige møte</p>
+        <video id="minVideo" src=".//bilder/riktg1_13-23-49.mp4"></video>
+    </main>
+
+    <script>
+        function visSecret() {
+            let main = document.querySelector("main");
+            main.style.display = "block";
+            let knappContainer = document.querySelector(".knappContainer");
+            knappContainer.style.display = "none";
+            minVideo = document.getElementById("minVideo") 
+            minVideo.play();
+        }
+    </script>
+</body>
+</html>
